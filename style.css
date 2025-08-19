@@ -1,32 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body, html {
-    height: 100vh;
-    margin: 0;
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  background-color: var(--gray-100);
+  font-family: "Public Sans";
 }
 
 :root {
-    /* Primary Colours */
-    --blue-950: hsl(233, 26%, 24%);
-    --green-500: hsl(136, 64%, 51%);
-    --cyan-400: hsl(192, 69%, 51%);
+  /* Primary Colours */
+  --blue-950: hsl(233, 26%, 24%);
+  --green-500: hsl(136, 64%, 51%);
+  --cyan-400: hsl(192, 69%, 51%);
 
-    /* Neutral */
-    --gray-600: hsl(233, 8%, 62%);
-    --gray-100: hsl(220, 16%, 96%);
-    --gray-50: hsl(0, 0%, 98%);
+  /* Neutral */
+  --gray-600: hsl(233, 8%, 62%);
+  --gray-100: hsl(220, 16%, 96%);
+  --gray-50: hsl(0, 0%, 98%);
 
-    /* Typography */
-    --body-copy: 18px;
-    
-    /* Font Family */
-    --public-sans-family:  
+  /* Typography */
+  --body-copy: 18px;
+
+  /* Font Family */
+  --public-sans-family: ;
 }
 
 @font-face {
-    font-family: public-sans;
-    src: url(https://fonts.google.com/specimen/Public+Sans);
-    font-weight: 300, 700;
+  font-family: "Public Sans", sans-serif;
+  src: url(https://fonts.google.com/specimen/Public+Sans);
+}
+
+header {
+  background-color: var(--gray-50);
+  display: flex;
+}
+
+.logo {
+    align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+  width: 100%;
+}
+
+.navbar > * {
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--gray-600);
+  transition: 150ms ease;
+}
+
+.nav-list a:hover {
+    color: var(--blue-950);
+}
+
+.request-btn {
+  all: unset;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, var(--cyan-400), var(--green-500));
+  color: var(--gray-50);
+  font-weight: 600;
+  cursor: pointer;
 }
