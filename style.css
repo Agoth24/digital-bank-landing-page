@@ -19,7 +19,8 @@ main > * {
 
 h1,
 h2,
-h3 {
+h3, 
+h4 {
   font-weight: 300;
   color: var(--blue-950);
   margin: 0;
@@ -27,6 +28,8 @@ h3 {
 
 p {
   color: var(--gray-600);
+  margin: 0;
+  line-height: 1.5;
 }
 
 :root {
@@ -53,7 +56,7 @@ p {
 }
 
 header {
-  background-color: var(--gray-50);
+  background-color: #FFF;;
   display: flex;
 }
 
@@ -98,12 +101,13 @@ header {
   padding: 1rem 3rem;
   border-radius: 2rem;
   background: linear-gradient(135deg, var(--cyan-400), var(--green-500));
-  color: var(--gray-50);
+  color: #FFF;
   font-weight: 600;
   cursor: pointer;
 }
 
 .hero {
+    background-color: var(--gray-50);
   display: flex;
   grid-template-columns: 40% 60%;
   position: relative;
@@ -120,10 +124,6 @@ header {
   padding-block: 10rem;
 }
 
-.hero-text {
-  line-height: 1.5;
-}
-
 .hero-hook {
   font-size: 4rem;
 }
@@ -136,4 +136,42 @@ header {
   height: auto; /* keep aspect ratio */
   z-index: 1;
   pointer-events: none;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    padding-block: 5rem;
+    gap: 3rem;
+    
+}
+
+.subheading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.info-card h4 {
+    font-size: 1.5rem;
+}
+
+.posts {
+    
 }
