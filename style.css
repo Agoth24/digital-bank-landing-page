@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    margin: 0;
+}
+
+:root {
+    /* Primary Colours */
+    --blue-950: hsl(233, 26%, 24%);
+    --green-500: hsl(136, 64%, 51%);
+    --cyan-400: hsl(192, 69%, 51%);
+
+    /* Neutral */
+    --gray-600: hsl(233, 8%, 62%);
+    --gray-100: hsl(220, 16%, 96%);
+    --gray-50: hsl(0, 0%, 98%);
+
+    /* Typography */
+    --body-copy: 18px;
+    
+    /* Font Family */
+    --public-sans-family:  
+}
+
+@font-face {
+    font-family: public-sans;
+    src: url(https://fonts.google.com/specimen/Public+Sans);
+    font-weight: 300, 700;
+}
